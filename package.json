@@ -1,10 +1,7 @@
 {
   "name": "@yetzt/binary-search-tree",
   "version": "0.2.6",
-  "author": {
-    "name": "Louis Chatriot",
-    "email": "louis.chatriot@gmail.com"
-  },
+  "author": "Louis Chatriot <louis.chatriot@gmail.com>",
   "description": "Different binary search tree implementations, including a self-balancing one (AVL)",
   "keywords": [
     "AVL tree",
@@ -15,7 +12,7 @@
   "homepage": "https://github.com/yetzt/node-binary-search-tree",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yetzt/node-binary-search-tree.git"
+    "url": "git+ssh://git@github.com/yetzt/node-binary-search-tree.git"
   },
   "scripts": {
     "test": "make test"
@@ -26,5 +23,13 @@
     "chai": "^4.3.4",
     "mocha": "^8.4.0",
     "underscore": "^1.13.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/yetzt/node-binary-search-tree/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "license": "MIT"
 }

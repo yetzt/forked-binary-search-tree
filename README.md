@@ -1,15 +1,15 @@
 # Binary search trees for Node.js
 
-**Note: this module is not actively maintained bar for bug fixes. Its primary use is within NeDB and I do not plan on adding any new features.**
+**Note: this is forked from [binary-search-tree](https://github.com/louischatriot/node-binary-search-tree) by [Louis Chatriot](https://github.com/louischatriot), with vulnerable dependencies fixed.**
 
 Two implementations of binary search tree: <a href="http://en.wikipedia.org/wiki/Binary_search_tree" target="_blank">basic</a> and <a href="http://en.wikipedia.org/wiki/AVL_tree" target="_blank">AVL</a> (a kind of self-balancing binmary search tree). I wrote this module primarily to store indexes for <a href="https://github.com/louischatriot/nedb" target="_blank">NeDB</a> (a javascript dependency-less database).
 
 
 ## Installation and tests
-Package name is `binary-search-tree`.
+Package name is `@yetzt/binary-search-tree`.
 
 ```bash
-npm install binary-search-tree --save
+npm install @yetzt/binary-search-tree --save
 
 make test
 ```
@@ -20,8 +20,8 @@ The API mainly provides 3 functions: `insert`, `search` and `delete`. If you do 
 Values inserted can be anything except `undefined`.
 
 ```javascript
-var BinarySearchTree = require('binary-search-tree').BinarySearchTree
-  , AVLTree = require('binary-search-tree').AVLTree   // Same API as BinarySearchTree
+var BinarySearchTree = require('@yetzt/binary-search-tree').BinarySearchTree
+  , AVLTree = require('@yetzt/binary-search-tree').AVLTree   // Same API as BinarySearchTree
 
 // Creating a binary search tree
 var bst = new BinarySearchTree();
